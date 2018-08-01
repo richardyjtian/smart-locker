@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/nav_visitlog"
+        android:icon="@mipmap/ic_face_black_24dp"
+        android:title="Visit log" />
+
+    <item android:id="@+id/nav_locks"
+        android:icon="@mipmap/ic_lock_black_24dp"
+        android:title="Locks" />
+
+    <item android:id="@+id/nav_nfc"
+        android:icon="@mipmap/ic_nfc_black_24dp"
+        android:title="NFC" />
+
+    <item android:id="@+id/nav_logout"
+        android:icon="@mipmap/ic_person_black_24dp"
+        android:title="Logout" />
+
+</menu>

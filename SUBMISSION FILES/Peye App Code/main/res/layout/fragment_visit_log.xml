@@ -1,0 +1,836 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scrollview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.g19p2.g19p2app.VisitLogFragment">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card0"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_margin="5dp"
+            card_view:cardBackgroundColor="@color/colorPrimaryDark"
+            card_view:cardCornerRadius="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/time_label_0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:padding="7dp"
+                    android:text="Time:" />
+
+                <TextView
+                    android:id="@+id/time_0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/date_0"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignRight="@+id/date_0"
+                    android:padding="7dp"
+                    android:text="23:59" />
+
+                <TextView
+                    android:id="@+id/date_label_0"
+                    android:layout_width="53dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/time_label_0"
+                    android:padding="7dp"
+                    android:text="Date:" />
+
+                <TextView
+                    android:id="@+id/date_0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/date_label_0"
+                    android:layout_alignBottom="@+id/date_label_0"
+                    android:layout_toEndOf="@+id/date_label_0"
+                    android:layout_toRightOf="@+id/date_label_0"
+                    android:padding="7dp"
+                    android:text="2018-05-15" />
+
+                <TextView
+                    android:id="@+id/status_label_0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/status_0"
+                    android:layout_alignBottom="@+id/status_0"
+                    android:layout_toLeftOf="@+id/status_0"
+                    android:layout_toStartOf="@+id/status_0"
+                    android:padding="7dp"
+                    android:text="Status:" />
+
+                <TextView
+                    android:id="@+id/status_0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="21dp"
+                    android:layout_marginRight="21dp"
+                    android:padding="7dp"
+                    android:text="AUTHORIZED"
+                    android:textAlignment="textEnd" />
+
+
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card1"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_margin="5dp"
+            card_view:cardBackgroundColor="@color/colorPrimaryDark"
+            card_view:cardCornerRadius="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/time_label_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:padding="7dp"
+                    android:text="Time:" />
+
+                <TextView
+                    android:id="@+id/time_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/date_1"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignRight="@+id/date_1"
+                    android:padding="7dp"
+                    android:text="23:59" />
+
+                <TextView
+                    android:id="@+id/date_label_1"
+                    android:layout_width="53dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/time_label_1"
+                    android:padding="7dp"
+                    android:text="Date:" />
+
+                <TextView
+                    android:id="@+id/date_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/date_label_1"
+                    android:layout_alignBottom="@+id/date_label_1"
+                    android:layout_toEndOf="@+id/date_label_1"
+                    android:layout_toRightOf="@+id/date_label_1"
+                    android:padding="7dp"
+                    android:text="2018-05-15" />
+
+                <TextView
+                    android:id="@+id/status_label_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/status_1"
+                    android:layout_alignBottom="@+id/status_1"
+                    android:layout_toLeftOf="@+id/status_1"
+                    android:layout_toStartOf="@+id/status_1"
+                    android:padding="7dp"
+                    android:text="Status:" />
+
+                <TextView
+                    android:id="@+id/status_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="19dp"
+                    android:layout_marginRight="19dp"
+                    android:padding="7dp"
+                    android:text="AUTHORIZED" />
+
+
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card2"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_margin="5dp"
+            card_view:cardBackgroundColor="@color/colorPrimaryDark"
+            card_view:cardCornerRadius="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/time_label_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:padding="7dp"
+                    android:text="Time:" />
+
+                <TextView
+                    android:id="@+id/time_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/date_2"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignRight="@+id/date_2"
+                    android:padding="7dp"
+                    android:text="23:59" />
+
+                <TextView
+                    android:id="@+id/date_label_2"
+                    android:layout_width="53dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/time_label_2"
+                    android:padding="7dp"
+                    android:text="Date:" />
+
+                <TextView
+                    android:id="@+id/date_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/date_label_2"
+                    android:layout_alignBottom="@+id/date_label_2"
+                    android:layout_toEndOf="@+id/date_label_2"
+                    android:layout_toRightOf="@+id/date_label_2"
+                    android:padding="7dp"
+                    android:text="2018-05-15" />
+
+                <TextView
+                    android:id="@+id/status_label_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/status_2"
+                    android:layout_alignBottom="@+id/status_2"
+                    android:layout_toLeftOf="@+id/status_2"
+                    android:layout_toStartOf="@+id/status_2"
+                    android:padding="7dp"
+                    android:text="Status:" />
+
+                <TextView
+                    android:id="@+id/status_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
+                    android:padding="7dp"
+                    android:text="AUTHORIZED" />
+
+
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card3"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_margin="5dp"
+            card_view:cardBackgroundColor="@color/colorPrimaryDark"
+            card_view:cardCornerRadius="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/time_label_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:padding="7dp"
+                    android:text="Time:" />
+
+                <TextView
+                    android:id="@+id/time_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/date_3"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignRight="@+id/date_3"
+                    android:padding="7dp"
+                    android:text="23:59" />
+
+                <TextView
+                    android:id="@+id/date_label_3"
+                    android:layout_width="53dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/time_label_3"
+                    android:padding="7dp"
+                    android:text="Date:" />
+
+                <TextView
+                    android:id="@+id/date_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/date_label_3"
+                    android:layout_alignBottom="@+id/date_label_3"
+                    android:layout_toEndOf="@+id/date_label_3"
+                    android:layout_toRightOf="@+id/date_label_3"
+                    android:padding="7dp"
+                    android:text="2018-05-15" />
+
+                <TextView
+                    android:id="@+id/status_label_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/status_3"
+                    android:layout_alignBottom="@+id/status_3"
+                    android:layout_toLeftOf="@+id/status_3"
+                    android:layout_toStartOf="@+id/status_3"
+                    android:padding="7dp"
+                    android:text="Status:" />
+
+                <TextView
+                    android:id="@+id/status_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
+                    android:padding="7dp"
+                    android:text="AUTHORIZED" />
+
+
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card4"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_margin="5dp"
+            card_view:cardBackgroundColor="@color/colorPrimaryDark"
+            card_view:cardCornerRadius="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/time_label_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:padding="7dp"
+                    android:text="Time:" />
+
+                <TextView
+                    android:id="@+id/time_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/date_4"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignRight="@+id/date_4"
+                    android:padding="7dp"
+                    android:text="23:59" />
+
+                <TextView
+                    android:id="@+id/date_label_4"
+                    android:layout_width="53dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/time_label_4"
+                    android:padding="7dp"
+                    android:text="Date:" />
+
+                <TextView
+                    android:id="@+id/date_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/date_label_4"
+                    android:layout_alignBottom="@+id/date_label_4"
+                    android:layout_toEndOf="@+id/date_label_4"
+                    android:layout_toRightOf="@+id/date_label_4"
+                    android:padding="7dp"
+                    android:text="2018-05-15" />
+
+                <TextView
+                    android:id="@+id/status_label_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/status_4"
+                    android:layout_alignBottom="@+id/status_4"
+                    android:layout_toLeftOf="@+id/status_4"
+                    android:layout_toStartOf="@+id/status_4"
+                    android:padding="7dp"
+                    android:text="Status:" />
+
+                <TextView
+                    android:id="@+id/status_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
+                    android:padding="7dp"
+                    android:text="AUTHORIZED" />
+
+
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card5"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_margin="5dp"
+            card_view:cardBackgroundColor="@color/colorPrimaryDark"
+            card_view:cardCornerRadius="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/time_label_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:padding="7dp"
+                    android:text="Time:" />
+
+                <TextView
+                    android:id="@+id/time_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/date_5"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignRight="@+id/date_5"
+                    android:padding="7dp"
+                    android:text="23:59" />
+
+                <TextView
+                    android:id="@+id/date_label_5"
+                    android:layout_width="53dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/time_label_5"
+                    android:padding="7dp"
+                    android:text="Date:" />
+
+                <TextView
+                    android:id="@+id/date_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/date_label_5"
+                    android:layout_alignBottom="@+id/date_label_5"
+                    android:layout_toEndOf="@+id/date_label_5"
+                    android:layout_toRightOf="@+id/date_label_5"
+                    android:padding="7dp"
+                    android:text="2018-05-15" />
+
+                <TextView
+                    android:id="@+id/status_label_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/status_5"
+                    android:layout_alignBottom="@+id/status_5"
+                    android:layout_toLeftOf="@+id/status_5"
+                    android:layout_toStartOf="@+id/status_5"
+                    android:padding="7dp"
+                    android:text="Status:" />
+
+                <TextView
+                    android:id="@+id/status_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="19dp"
+                    android:layout_marginRight="19dp"
+                    android:padding="7dp"
+                    android:text="AUTHORIZED" />
+
+
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card6"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_margin="5dp"
+            card_view:cardBackgroundColor="@color/colorPrimaryDark"
+            card_view:cardCornerRadius="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/time_label_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:padding="7dp"
+                    android:text="Time:" />
+
+                <TextView
+                    android:id="@+id/time_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/date_6"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignRight="@+id/date_6"
+                    android:padding="7dp"
+                    android:text="23:59" />
+
+                <TextView
+                    android:id="@+id/date_label_6"
+                    android:layout_width="53dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/time_label_6"
+                    android:padding="7dp"
+                    android:text="Date:" />
+
+                <TextView
+                    android:id="@+id/date_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/date_label_6"
+                    android:layout_alignBottom="@+id/date_label_6"
+                    android:layout_toEndOf="@+id/date_label_6"
+                    android:layout_toRightOf="@+id/date_label_6"
+                    android:padding="7dp"
+                    android:text="2018-05-15" />
+
+                <TextView
+                    android:id="@+id/status_label_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/status_6"
+                    android:layout_alignBottom="@+id/status_6"
+                    android:layout_toLeftOf="@+id/status_6"
+                    android:layout_toStartOf="@+id/status_6"
+                    android:padding="7dp"
+                    android:text="Status:" />
+
+                <TextView
+                    android:id="@+id/status_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
+                    android:padding="7dp"
+                    android:text="AUTHORIZED" />
+
+
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card7"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_margin="5dp"
+            card_view:cardBackgroundColor="@color/colorPrimaryDark"
+            card_view:cardCornerRadius="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/time_label_7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:padding="7dp"
+                    android:text="Time:" />
+
+                <TextView
+                    android:id="@+id/time_7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/date_7"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignRight="@+id/date_7"
+                    android:padding="7dp"
+                    android:text="23:59" />
+
+                <TextView
+                    android:id="@+id/date_label_7"
+                    android:layout_width="53dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/time_label_7"
+                    android:padding="7dp"
+                    android:text="Date:" />
+
+                <TextView
+                    android:id="@+id/date_7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/date_label_7"
+                    android:layout_alignBottom="@+id/date_label_7"
+                    android:layout_toEndOf="@+id/date_label_7"
+                    android:layout_toRightOf="@+id/date_label_7"
+                    android:padding="7dp"
+                    android:text="2018-05-15" />
+
+                <TextView
+                    android:id="@+id/status_label_7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/status_7"
+                    android:layout_alignBottom="@+id/status_7"
+                    android:layout_toLeftOf="@+id/status_7"
+                    android:layout_toStartOf="@+id/status_7"
+                    android:padding="7dp"
+                    android:text="Status:" />
+
+                <TextView
+                    android:id="@+id/status_7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
+                    android:padding="7dp"
+                    android:text="AUTHORIZED" />
+
+
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card8"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_margin="5dp"
+            card_view:cardBackgroundColor="@color/colorPrimaryDark"
+            card_view:cardCornerRadius="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/time_label_8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:padding="7dp"
+                    android:text="Time:" />
+
+                <TextView
+                    android:id="@+id/time_8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/date_8"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignRight="@+id/date_8"
+                    android:padding="7dp"
+                    android:text="23:59" />
+
+                <TextView
+                    android:id="@+id/date_label_8"
+                    android:layout_width="53dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/time_label_8"
+                    android:padding="7dp"
+                    android:text="Date:" />
+
+                <TextView
+                    android:id="@+id/date_8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/date_label_8"
+                    android:layout_alignBottom="@+id/date_label_8"
+                    android:layout_toEndOf="@+id/date_label_8"
+                    android:layout_toRightOf="@+id/date_label_8"
+                    android:padding="7dp"
+                    android:text="2018-05-15" />
+
+                <TextView
+                    android:id="@+id/status_label_8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/status_8"
+                    android:layout_alignBottom="@+id/status_8"
+                    android:layout_toLeftOf="@+id/status_8"
+                    android:layout_toStartOf="@+id/status_8"
+                    android:padding="7dp"
+                    android:text="Status:" />
+
+                <TextView
+                    android:id="@+id/status_8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="18dp"
+                    android:layout_marginRight="18dp"
+                    android:padding="7dp"
+                    android:text="AUTHORIZED" />
+
+
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card9"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_margin="5dp"
+            card_view:cardBackgroundColor="@color/colorPrimaryDark"
+            card_view:cardCornerRadius="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/time_label_9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:padding="7dp"
+                    android:text="Time:" />
+
+                <TextView
+                    android:id="@+id/time_9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/date_9"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignRight="@+id/date_9"
+                    android:padding="7dp"
+                    android:text="23:59" />
+
+                <TextView
+                    android:id="@+id/date_label_9"
+                    android:layout_width="53dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/time_label_9"
+                    android:padding="7dp"
+                    android:text="Date:" />
+
+                <TextView
+                    android:id="@+id/date_9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/date_label_9"
+                    android:layout_alignBottom="@+id/date_label_9"
+                    android:layout_toEndOf="@+id/date_label_9"
+                    android:layout_toRightOf="@+id/date_label_9"
+                    android:padding="7dp"
+                    android:text="2018-05-15" />
+
+                <TextView
+                    android:id="@+id/status_label_9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/status_9"
+                    android:layout_alignBottom="@+id/status_9"
+                    android:layout_toLeftOf="@+id/status_9"
+                    android:layout_toStartOf="@+id/status_9"
+                    android:padding="7dp"
+                    android:text="Status:" />
+
+                <TextView
+                    android:id="@+id/status_9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="19dp"
+                    android:layout_marginRight="19dp"
+                    android:padding="7dp"
+                    android:text="AUTHORIZED" />
+
+
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

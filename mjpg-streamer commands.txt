@@ -1,0 +1,45 @@
+# Make and change into directory.
+sudo mkdir /opt/mjpg-streamer
+cd /opt/mjpg-streamer/
+
+# Install packages to allow for video streaming
+sudo apt-get install libjpeg8-dev
+sudo apt-get install imagemagick
+sudo apt-get install subversion
+sudo apt-get install libv4l-dev
+
+# Download MJPG Streamer into the mjpg-streamer directory
+sudo svn co https://svn.code.sf.net/p/mjpg-streamer/code/mjpg-streamer/ .
+
+# Compile downloaded files in directory
+sudo make
+
+# Create symbolic link for header file
+sudo ln -s /usr/include/libv4l1-videodev.h /usr/include/linux/videodev.h
+
+# Make a directory to store the temporary images and make it writable
+sudo mkdir /tmp/stream/
+sudo chmod a+rw /tmp/stream/
+
+# NOTE: The following commands were executed to update the mjpg-streamer files and make streaming simpler
+
+# Install newer version of libjpeg
+sudo apt-get install libjpeg62-dev
+sudo apt-get install cmake
+
+# Download updated mjpg-streamer (with raspicam plugin)
+git clone https://github.com/jacksonliam/mjpg-streamer.git ~/mjpg-streamer
+
+# Change to new directory
+cd ~/mjpg-streamer/mjpg-streamer-experimental
+
+# Compile files 
+make clean all
+
+# Replace old mjpg-streamer files and move new directory into old one
+sudo rm -rf /opt/mjpg-streamer
+sudo mv ~/mjpg-streamer/mjpg-streamer-experimental /opt/mjpg-streamer
+sudo rm -rf ~/mjpg-streamer
+
+# Begin streaming
+LD_LIBRARY_PATH=/opt/mjpg-streamer/ /opt/mjpg-streamer/mjpg_streamer -i "input_raspicam.so -fps 15 -q 50 -x 640 -y 480" -o "output_http.so -p 9000 -w /opt/mjpg-streamer/www" &

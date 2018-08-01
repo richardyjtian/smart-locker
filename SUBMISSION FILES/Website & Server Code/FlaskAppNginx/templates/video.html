@@ -1,0 +1,110 @@
+{% extends "header.html" %} {% block body %}
+<style>
+    .classWithPad {
+        margin: 10px;
+    }
+
+    .top-buffer {
+        margin-top: 50px;
+    }
+
+</style>
+
+
+<!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.4.8/socket.io.min.js"></script>-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script type="text/javascript" charset="utf-8">
+    $(document).ready(function () {
+
+
+        var namespace = '/pi';
+        // The connection URL has the following format:
+        //     http[s]://<domain>:<port>[/<namespace>]
+        var socket = io.connect('https://' + document.domain + ':' + location.port + namespace);
+        // var socket = io.connect('https://hizhh.me:8000/chat');
+        // var socket = io.connect("https://nubblier-octopus-5424.dataplicity.io/" + namespace);
+
+
+        // when connection is established successfully, send a message to server
+        socket.on('connect', function () {
+            // socket.emit('pi_event', 'User has connected!');
+            console.log('Ready to send command to rpi');
+
+        });
+
+        //https://stackoverflow.com/questions/10437584/socket-io-reconnect
+
+        socket.on('disconnect', function () {
+            // socket.emit('pi_event', 'User has disconnected!');
+            console.log('Disconnect..');
+
+        });
+
+
+        socket.on('pi_response', function (msg) {
+            $("#messages").append('<li>' + msg + '</li>');
+            console.log('Received message');
+        });
+
+
+        $('#camera_right').on('click', function () {
+            socket.emit('pi_event', 'right');
+        });
+
+        $('#camera_left').on('click', function () {
+            socket.emit('pi_event', 'left');
+        });
+
+        $('#start_streaming').on('click', function () {
+            socket.emit('pi_event', 'start streaming');
+            $("#stream_feed").attr('src', "https://acerate-scorpion-5728.dataplicity.io/?action=stream");
+        });
+
+        $('#stop_streaming').on('click', function () {
+            socket.emit('pi_event', 'stop streaming');
+            $("#stream_feed").attr('src', "");
+        });
+
+
+    });
+
+
+</script>
+
+<<<<<<< HEAD
+<div class="container-fluid" style="margin-top:50px;">
+=======
+<div class="container-fluid">
+>>>>>>> 8ce254e8ff316e2c6ff1f7e2cd0623dfe5ffedf5
+    <!--<form id="emit" method="POST" action='#'>-->
+    <!--<input type="text" name="emit_data" id="emit_data" placeholder="Message">-->
+    <!--<input type="submit" value="Echo">-->
+    <!--</form>-->
+    <!--<form id="broadcast" method="POST" action='#'>-->
+    <!--<input type="text" name="broadcast_data" id="broadcast_data" placeholder="Message">-->
+    <!--<input type="submit" value="Broadcast">-->
+    <!--</form>-->
+
+    <!--<form id="disconnect" method="POST" action="#">-->
+    <!--<input type="submit" value="Disconnect">-->
+    <!--</form>-->
+    <!--<div id="log"></div>-->
+    <!--<input type="text" id="myMessage">-->
+    <div class="d-flex justify-content-center">
+
+        <div class="embed-responsive embed-responsive-16by9 classWithPad top-buffer" style="max-width: 640px">
+            <iframe class="embed-responsive-item" style="background: #000000;" id="stream_feed"
+                    src="https://acerate-scorpion-5728.dataplicity.io/?action=stream"></iframe>
+        </div>
+    </div>
+
+    <!--<button id="run_script" class="btn btn-primary classWithPad">Run Script</button>-->
+
+    <ul id="messages"></ul>
+
+
+</div>
+
+
+{% endblock %}

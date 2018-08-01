@@ -1,0 +1,624 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.g19p2.g19p2app.LocksFragment">
+
+    <android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.g19p2.g19p2app.VisitLogFragment">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/lock0"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_margin="5dp"
+                card_view:cardElevation="0dp"
+                card_view:cardBackgroundColor="@android:color/transparent"
+                card_view:cardCornerRadius="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/lock_id_label_0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="11dp"
+                        android:layout_marginStart="11dp"
+                        android:padding="10dp"
+                        android:text="Lock ID:"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/lock_id_0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/lock_id_label_0"
+                        android:layout_alignBottom="@+id/lock_id_label_0"
+                        android:layout_toEndOf="@+id/lock_id_label_0"
+                        android:layout_toRightOf="@+id/lock_id_label_0"
+                        android:padding="10dp"
+                        android:text="FFFFFF"
+                        android:textSize="18sp" />
+
+                    <ImageButton
+                        android:id="@+id/unlock_btn_0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/lock_id_0"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginEnd="13dp"
+                        android:layout_marginRight="13dp"
+                        android:src="@mipmap/ic_videocam_black_24dp" />
+
+                    <View
+                        android:id="@+id/divider_0"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/darker_gray" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/lock1"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_margin="5dp"
+                card_view:cardElevation="0dp"
+                card_view:cardBackgroundColor="@android:color/transparent"
+                card_view:cardCornerRadius="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/lock_id_label_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="11dp"
+                        android:layout_marginStart="11dp"
+                        android:padding="10dp"
+                        android:text="Lock ID:"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/lock_id_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/lock_id_label_1"
+                        android:layout_alignBottom="@+id/lock_id_label_1"
+                        android:layout_toEndOf="@+id/lock_id_label_1"
+                        android:layout_toRightOf="@+id/lock_id_label_1"
+                        android:padding="10dp"
+                        android:text="FFFFFF"
+                        android:textSize="18sp" />
+
+                    <ImageButton
+                        android:id="@+id/unlock_btn_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/lock_id_1"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginEnd="13dp"
+                        android:layout_marginRight="13dp"
+                        android:src="@mipmap/ic_videocam_black_24dp" />
+
+                    <View
+                        android:id="@+id/divider_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/darker_gray" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/lock2"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_margin="5dp"
+                card_view:cardElevation="0dp"
+                card_view:cardBackgroundColor="@android:color/transparent"
+                card_view:cardCornerRadius="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/lock_id_label_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="11dp"
+                        android:layout_marginStart="11dp"
+                        android:padding="10dp"
+                        android:text="Lock ID:"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/lock_id_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/lock_id_label_2"
+                        android:layout_alignBottom="@+id/lock_id_label_2"
+                        android:layout_toEndOf="@+id/lock_id_label_2"
+                        android:layout_toRightOf="@+id/lock_id_label_2"
+                        android:padding="10dp"
+                        android:text="FFFFFF"
+                        android:textSize="18sp" />
+
+                    <ImageButton
+                        android:id="@+id/unlock_btn_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/lock_id_2"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginEnd="13dp"
+                        android:layout_marginRight="13dp"
+                        android:src="@mipmap/ic_videocam_black_24dp" />
+
+                    <View
+                        android:id="@+id/divider_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/darker_gray" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/lock3"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_margin="5dp"
+                card_view:cardElevation="0dp"
+                card_view:cardBackgroundColor="@android:color/transparent"
+                card_view:cardCornerRadius="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/lock_id_label_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="11dp"
+                        android:layout_marginStart="11dp"
+                        android:padding="10dp"
+                        android:text="Lock ID:"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/lock_id_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/lock_id_label_3"
+                        android:layout_alignBottom="@+id/lock_id_label_3"
+                        android:layout_toEndOf="@+id/lock_id_label_3"
+                        android:layout_toRightOf="@+id/lock_id_label_3"
+                        android:padding="10dp"
+                        android:text="FFFFFF"
+                        android:textSize="18sp" />
+
+                    <ImageButton
+                        android:id="@+id/unlock_btn_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/lock_id_3"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginEnd="13dp"
+                        android:layout_marginRight="13dp"
+                        android:src="@mipmap/ic_videocam_black_24dp" />
+
+                    <View
+                        android:id="@+id/divider_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/darker_gray" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/lock4"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_margin="5dp"
+                card_view:cardElevation="0dp"
+                card_view:cardBackgroundColor="@android:color/transparent"
+                card_view:cardCornerRadius="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/lock_id_label_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="11dp"
+                        android:layout_marginStart="11dp"
+                        android:padding="10dp"
+                        android:text="Lock ID:"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/lock_id_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/lock_id_label_4"
+                        android:layout_alignBottom="@+id/lock_id_label_4"
+                        android:layout_toEndOf="@+id/lock_id_label_4"
+                        android:layout_toRightOf="@+id/lock_id_label_4"
+                        android:padding="10dp"
+                        android:text="FFFFFF"
+                        android:textSize="18sp" />
+
+                    <ImageButton
+                        android:id="@+id/unlock_btn_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/lock_id_4"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginEnd="13dp"
+                        android:layout_marginRight="13dp"
+                        android:src="@mipmap/ic_videocam_black_24dp" />
+
+                    <View
+                        android:id="@+id/divider_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/darker_gray" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/lock5"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_margin="5dp"
+                card_view:cardElevation="0dp"
+                card_view:cardBackgroundColor="@android:color/transparent"
+                card_view:cardCornerRadius="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/lock_id_label_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="11dp"
+                        android:layout_marginStart="11dp"
+                        android:padding="10dp"
+                        android:text="Lock ID:"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/lock_id_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/lock_id_label_5"
+                        android:layout_alignBottom="@+id/lock_id_label_5"
+                        android:layout_toEndOf="@+id/lock_id_label_5"
+                        android:layout_toRightOf="@+id/lock_id_label_5"
+                        android:padding="10dp"
+                        android:text="FFFFFF"
+                        android:textSize="18sp" />
+
+                    <ImageButton
+                        android:id="@+id/unlock_btn_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/lock_id_5"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginEnd="13dp"
+                        android:layout_marginRight="13dp"
+                        android:src="@mipmap/ic_videocam_black_24dp" />
+
+                    <View
+                        android:id="@+id/divider_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/darker_gray" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/lock6"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_margin="5dp"
+                card_view:cardElevation="0dp"
+                card_view:cardBackgroundColor="@android:color/transparent"
+                card_view:cardCornerRadius="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/lock_id_label_6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="11dp"
+                        android:layout_marginStart="11dp"
+                        android:padding="10dp"
+                        android:text="Lock ID:"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/lock_id_6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/lock_id_label_6"
+                        android:layout_alignBottom="@+id/lock_id_label_6"
+                        android:layout_toEndOf="@+id/lock_id_label_6"
+                        android:layout_toRightOf="@+id/lock_id_label_6"
+                        android:padding="10dp"
+                        android:text="FFFFFF"
+                        android:textSize="18sp" />
+
+                    <ImageButton
+                        android:id="@+id/unlock_btn_6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/lock_id_6"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginEnd="13dp"
+                        android:layout_marginRight="13dp"
+                        android:src="@mipmap/ic_videocam_black_24dp" />
+
+                    <View
+                        android:id="@+id/divider_6"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/darker_gray" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/lock7"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_margin="5dp"
+                card_view:cardElevation="0dp"
+                card_view:cardBackgroundColor="@android:color/transparent"
+                card_view:cardCornerRadius="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/lock_id_label_7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="11dp"
+                        android:layout_marginStart="11dp"
+                        android:padding="10dp"
+                        android:text="Lock ID:"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/lock_id_7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/lock_id_label_7"
+                        android:layout_alignBottom="@+id/lock_id_label_7"
+                        android:layout_toEndOf="@+id/lock_id_label_7"
+                        android:layout_toRightOf="@+id/lock_id_label_7"
+                        android:padding="10dp"
+                        android:text="FFFFFF"
+                        android:textSize="18sp" />
+
+                    <ImageButton
+                        android:id="@+id/unlock_btn_7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/lock_id_7"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginEnd="13dp"
+                        android:layout_marginRight="13dp"
+                        android:src="@mipmap/ic_videocam_black_24dp" />
+
+                    <View
+                        android:id="@+id/divider_7"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/darker_gray" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/lock8"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_margin="5dp"
+                card_view:cardElevation="0dp"
+                card_view:cardBackgroundColor="@android:color/transparent"
+                card_view:cardCornerRadius="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/lock_id_label_8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="11dp"
+                        android:layout_marginStart="11dp"
+                        android:padding="10dp"
+                        android:text="Lock ID:"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/lock_id_8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/lock_id_label_8"
+                        android:layout_alignBottom="@+id/lock_id_label_8"
+                        android:layout_toEndOf="@+id/lock_id_label_8"
+                        android:layout_toRightOf="@+id/lock_id_label_8"
+                        android:padding="10dp"
+                        android:text="FFFFFF"
+                        android:textSize="18sp" />
+
+                    <ImageButton
+                        android:id="@+id/unlock_btn_8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/lock_id_8"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginEnd="13dp"
+                        android:layout_marginRight="13dp"
+                        android:src="@mipmap/ic_videocam_black_24dp" />
+
+                    <View
+                        android:id="@+id/divider_8"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/darker_gray" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/lock9"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_margin="5dp"
+                card_view:cardElevation="0dp"
+                card_view:cardBackgroundColor="@android:color/transparent"
+                card_view:cardCornerRadius="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/lock_id_label_9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="11dp"
+                        android:layout_marginStart="11dp"
+                        android:padding="10dp"
+                        android:text="Lock ID:"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/lock_id_9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/lock_id_label_9"
+                        android:layout_alignBottom="@+id/lock_id_label_9"
+                        android:layout_toEndOf="@+id/lock_id_label_9"
+                        android:layout_toRightOf="@+id/lock_id_label_9"
+                        android:padding="10dp"
+                        android:text="FFFFFF"
+                        android:textSize="18sp" />
+
+                    <ImageButton
+                        android:id="@+id/unlock_btn_9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/lock_id_9"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginEnd="13dp"
+                        android:layout_marginRight="13dp"
+                        android:src="@mipmap/ic_videocam_black_24dp" />
+
+                    <View
+                        android:id="@+id/divider_9"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/darker_gray" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/add_lock_btn"
+        android:layout_gravity="end|bottom"
+        android:src="@mipmap/ic_add_black_24dp"
+        android:layout_margin="16dp"/>
+
+
+</FrameLayout>

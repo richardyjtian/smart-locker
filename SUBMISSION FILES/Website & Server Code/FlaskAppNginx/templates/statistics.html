@@ -1,0 +1,51 @@
+{% extends "header.html" %} {% block body %}
+
+
+<div class="container-fluid" style="margin-top:50px;">
+
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home"
+               aria-selected="true">Locks</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile"
+               aria-selected="false">Authentication Log</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact"
+               aria-selected="false">Summary</a>
+        </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+            <ul class="list-group">
+                {% for lock in locklistSet %}
+                <li class="list-group-item">Lock#{{lock.lid}} @{{lock.streamURL}}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+            <ul class="list-group">
+                {% for history in historySet %}
+                <li class="list-group-item">{{history.status}}: {{history.time}}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+            <ul class="list-group">
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Denied
+                    <span class="badge badge-primary badge-pill">{{denied}}</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Authorized
+                    <span class="badge badge-primary badge-pill">{{authorized}}</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
